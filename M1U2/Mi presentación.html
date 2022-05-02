@@ -5,31 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Presentación</title>
+<link rel="stylesheet" href="Estilo.css">
 </head>
-<h1>Hola, en esta ocación voy a hablar sobre mi.</h1>
-<h2>Empecemos...</h2>
-<h4>Este soy yo.</h4>
+<h1 style="color: white; background-color: black;">Hola, en esta ocación voy a hablar sobre mi.</h1>
+<h2 style="color: white; background-color: black;">Empecemos...</h2>
+<h4 style="color: white; background-color: black;">Este soy yo.</h4>    
+    
+    <style type="text/css">
+        table, tr, td {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        h2, h3 {
+            border: 1px  solid black;
+        }
+        body {
+            text-align: center;
+        }
+        
+    </style>
 <body>
-    <img src="Mi foto.png" alt="Foto sobre mi" width="400" height="400">
-    <h1>Me llamo Matías Hernán Riz.</h1> 
+    <img src="Mi foto.png" alt="Foto sobre mi" width="400" height="400" class="imagen">
+    <h1>Soy Matías Hernán Riz.</h1> 
     <h2>Tengo 22 años.</h2>
-    <ul>        
+    <div id="movimiento">    
+       <ul id="cuadro1">        
         <H4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Mis series favoritas son:</H4>
         <li>El Marginal</li>
         <li>Élite</li>
         <li>La casa de papel</li>           
     </ul> 
-    <ol>
+    <ol id="cuadro2">
         <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Mis películas favoritas son:</h4>
-        <li>El Transportador 3</li>
+        <li>Transportador 3</li>
         <li>Rapidos y Furiosos 7</li>
         <li>El lobo de Wall Street</li>
     </ol> 
+    </div> 
     <h2>Una breve descripción sobre mi.</h2> 
-    <p>Hola, me encuentro realizando el cursos de progrmación y voy a contar que es lo que más me gusta hacer en mi vida cotidiana.</p>
-    <p>Me gusta realizar deporte, como ir al gimnasio o jugar al fútbol.</p>
-    <p>Me gusta salir de fiestas con mis amigos, ya sean de la secundaria o del laburo.</p>
-    <p>Me gusta mirar peliculas los domingos con mi novia.</p>
-    <h3>Conoceme en mi instagram haciendo click <a href="https://www.instagram.com/mati_riz/" target="valor">aquí.</a></h3> 
+    <div id="caja">    
+    <div class="item1"><p>Hola, me encuentro realizando el cursos de progrmación y voy a contar que es lo que más me gusta hacer en mi vida cotidiana.</p></div>
+    <div class="item2"><p>Me gusta realizar deporte, como ir al gimnasio o jugar al fútbol.</p></div>
+    <div class="item3"><p>Me gusta salir de fiestas con mis amigos, ya sean de la secundaria o del laburo.</p></div>
+    <div class="item4"><p>Me gusta mirar peliculas los domingos con mi novia.</p></div>
+     </div>
+    <h4>Conoceme en mi instagram haciendo click <a href="https://www.instagram.com/mati_riz/" target="valor" style="color: white;">aquí.</a></h4>
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;">Completa el siguiente formulario.</h3> 
+    <table style="color: white; background-color: black;" border="3xp">
+        <tr>
+            <td><b>Nombre</b></td>
+        <td><b>Apellido</b></td>
+        <td><b>Edad</b></td>
+        <td><b>Tipo de sangre</b></td>
+        <td><b>Fecha de cumpleaños</b></td>
+        </tr> 
+        <tr>
+            <td><b><input type="text" name="Nombre"></b></td>
+        <td><b><input type="text" name="Apellido"></b></td>
+        <td><b><input type="text" name="Edad"></b></td>
+        <td><b><input type="text" name="Tipo de sangre"></b></td>
+        <td><b><input type="text" name="Fecha de cumpleaños"></b></td> 
+        </tr>        
+    </table> 
 </body>
 </html>
